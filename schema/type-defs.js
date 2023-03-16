@@ -6,11 +6,29 @@ const typeDefs = gql`
         name: String!
         username: String!
         age: Int!
-        nationality: String!
+        nationality: Nationality!
+        friends: [User]
+        favouriteMovie: [Movie]
+    }
+
+    type Movie {
+        id: ID!
+        name: String!
+        releaseYear: Int!
+        isInOTT: Boolean!
     }
 
     type Query {
         users: [User!]!
+        user(id: ID!): User!
+        movies: [Movie!]!
+        movie(name: String!): Movie!
+    }
+    enum Nationality {
+        INDIA  
+        MEXICO 
+        FRANCE 
+        BRAZIL  
     }
 `;
 

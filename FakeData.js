@@ -4,29 +4,82 @@ const UserList = [
         name: "Mukul", 
         username: "mukultotla",
         age: 25,
-        nationality: "India"
+        nationality: "INDIA",
+        friends: [
+            {
+                id: 2,
+                name: "David", 
+                username: "david",
+                age: 19,
+                nationality: "BRAZIL"
+            },
+            {
+                id: 3,
+                name: "Austin", 
+                username: "austin",
+                age: 32,
+                nationality: "MEXICO"
+            }
+        ]
     },
     {
         id: 2,
-        name: "Mukul", 
-        username: "mukultotla",
+        name: "David", 
+        username: "david",
         age: 19,
-        nationality: "India"
+        nationality: "BRAZIL"
     },
     {
         id: 3,
-        name: "Mukul", 
-        username: "mukultotla",
+        name: "Austin", 
+        username: "austin",
         age: 32,
-        nationality: "India"
+        nationality: "MEXICO"
     },
     {
         id: 4,
-        name: "Mukul", 
-        username: "mukultotla",
+        name: "Kylian", 
+        username: "kylian",
         age: 58,
-        nationality: "India"
+        nationality: "FRANCE",
+        friends: [
+            {
+                id: 3,
+                name: "Austin", 
+                username: "austin",
+                age: 32,
+                nationality: "MEXICO"
+            }   
+        ]
     }
 ];
 
-module.exports = {UserList}
+const MovieList = [
+    {
+      id: 1,
+      name: "Avengers Endgame",
+      releaseYear: 2019,
+      isInOTT: true,
+    },
+    {
+      id: 2,
+      name: "Interstellar",
+      releaseYear: 2007,
+      isInOTT: true,
+    },
+    {
+      id: 3,
+      name: "Superbad",
+      releaseYear: 2009,
+      isInOTT: false,
+    },
+    {
+      id: 4,
+      name: "Covid- The Movie",
+      releaseYear: 2020,
+      isInOTT: true,
+    },
+  ];
+  
+
+module.exports = { UserList, MovieList }
